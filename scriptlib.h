@@ -41,6 +41,8 @@ public:
 	static int32 card_get_origin_level(lua_State *L);
 	static int32 card_get_origin_rank(lua_State *L);
 	static int32 card_is_xyz_level(lua_State *L);
+	static int32 card_get_origin_link(lua_State *L);
+	static int32 card_get_origin_linkmarker(lua_State *L);
 	static int32 card_get_lscale(lua_State *L);
 	static int32 card_get_origin_lscale(lua_State *L);
 	static int32 card_get_rscale(lua_State *L);
@@ -51,6 +53,9 @@ public:
 	static int32 card_get_linked_zone(lua_State *L);
 	static int32 card_get_free_linked_zone(lua_State *L);
 	static int32 card_is_link_state(lua_State *L);
+	static int32 card_get_column_group(lua_State *L);
+	static int32 card_get_column_group_count(lua_State *L);
+	static int32 card_is_all_column(lua_State *L);
 	static int32 card_get_attribute(lua_State *L);
 	static int32 card_get_origin_attribute(lua_State *L);
 	static int32 card_get_fusion_attribute(lua_State *L);
@@ -66,6 +71,8 @@ public:
 	static int32 card_get_previous_type_onfield(lua_State *L);
 	static int32 card_get_previous_level_onfield(lua_State *L);
 	static int32 card_get_previous_rank_onfield(lua_State *L);
+	static int32 card_get_previous_link_onfield(lua_State *L);
+	static int32 card_get_previous_linkmarker_onfield(lua_State *L);
 	static int32 card_get_previous_attribute_onfield(lua_State *L);
 	static int32 card_get_previous_race_onfield(lua_State *L);
 	static int32 card_get_previous_attack_onfield(lua_State *L);
@@ -206,6 +213,8 @@ public:
 	static int32 card_is_level_above(lua_State *L);
 	static int32 card_is_rank_below(lua_State *L);
 	static int32 card_is_rank_above(lua_State *L);
+	static int32 card_is_link_below(lua_State *L);
+	static int32 card_is_link_above(lua_State *L);
 	static int32 card_is_attack_below(lua_State *L);
 	static int32 card_is_attack_above(lua_State *L);
 	static int32 card_is_defense_below(lua_State *L);
